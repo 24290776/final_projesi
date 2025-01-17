@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Koleksiyon</title>
+    <link rel="stylesheet" href="yeniweb.css">
+</head>
+
+<body>
+
+    <div class="footer-first">
+        <button onclick="sepet()">🛒</button>
+        <button onclick="uye()">👤</button>
+        <div id="fo"></div> 
+    </div>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Green Logo" class="logo" onclick="ana()">
+            <h1 onclick="ana()">GREEN</h1>
+        </div>
+        <p class="tagline">Yeni koleksiyonumuzdaki en şık parçaları keşfedin.</p>
+    </header>
+
+    <section class="image-section">
+        <div class="left-image">
+            <img src="iptal.jpg" alt="Saat" class="watch">
+        </div>
+        <div class="right-image">
+            <img src="saat2.jpg" alt="Saat" class="watch">
+        </div>
+    </section>
+
+    <section class="Hakkımızda">
+        <h2>BİZ KİMİZ</h2>
+        <div id="dhafzla">Green Koleksiyon, 2024 yılından bu yana saat dünyasında sizlere eşsiz tasarımlar ve kaliteli parçalar sunmak için faaliyet gösteren bir markadır.</div>
+        <button id="fazlabutton" onclick="dhafzla()">Daha Fazla</button>
+    </section>
+
+    <section class="ÜRÜNLERİMİZ">
+        <h2>ÜRÜNLERİMİZ</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="saat2.JPG" alt="Gümüş Koleksiyonu">
+                <button><p>Gümüş Koleksiyonu</p></button>
+            </div>
+            <div class="product-item">
+                <img src="saat4.jpg" alt="Kişiselleştirilmiş Parçalar">
+                <button><p>Kişiselleştirilmiş Parçalar</p></button>
+            </div>
+            <div class="product-item">
+                <img src="saat5.jpg" alt="Altın Koleksiyonu">
+                <button><p>Altın Koleksiyonu</p></button>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <h1>İletişime Geçin</h1>
+    </header>
+    <div id="iltsm">
+        <section class="istek-oneri">
+            <h2>İstek ve Öneriler</h2>
+            <form id="istekFormu" action="istek_gonder.php" method="POST">
+                <label for="adSoyad">Ad ve Soyad:</label>
+                <input type="text" id="adSoyad" name="adSoyad" placeholder="Adınızı girin..." required>
+            
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin..." required>
+            
+                <label for="mesaj">Mesajınız:</label>
+                <textarea id="mesaj" name="mesaj" placeholder="İstek veya önerilerinizi yazın..." rows="5" required></textarea>
+            
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+    </div>
+
+    <main>
+        <div class="image-container">
+            <img src="saatson.JPG" alt="Saat Görseli">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <button onclick="iltsm()">İletişim Bilgileri</button>
+            <button onclick="adres()">Adres Bilgileri</button>
+            <div id="bil"></div> 
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
